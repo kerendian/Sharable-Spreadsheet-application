@@ -1,6 +1,7 @@
 # Multithreaded-Sharable-Spreadsheet-application
 
 ***Implementation of Sharable Spreadsheet***
+
 first, we decided that 5 functions are changing the shape of the whole
 Spreadsheet table and they need to lock all the table when executes.
 The functions are: addRow, addCol, exchangeRows, exchangeCols, load, we call
@@ -27,5 +28,6 @@ or decrease the number of users can be simultaneously in all the searching
 functions at the same time.
 
 **Types of lock We use are**: Mutex, Semaphore and SemaphoreSlim
+
 **Number of locks we use in this program**: 1 Mutex, 1 Semaphore, 1 SemaphoreSlim, 
 Mutex array in size of the number of rows in the table.
